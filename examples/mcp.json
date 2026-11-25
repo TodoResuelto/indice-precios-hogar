@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "todoresuelto-indice-precios": {
+      "type": "http",
+      "url": "https://todoresuelto.com/mcp"
+    }
+  }
+}
