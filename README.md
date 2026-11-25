@@ -4,7 +4,7 @@ Precios de arreglos del hogar en 16 países de Latinoamérica, con su fuente.
 API y servidor MCP gratis, de sólo lectura, sin clave.
 
 - **Sitio:** [Todo Resuelto](https://todoresuelto.com)
-- **Precios:** [Índice de Precios del Hogar](https://todoresuelto.com/informe-precios-hogar)
+- **Precios:** [Precios de arreglos del hogar](https://todoresuelto.com/precios)
 - **Servidor MCP:** `https://todoresuelto.com/mcp` (Streamable HTTP)
 - **OpenAPI 3.1:** `https://todoresuelto.com/api/v1/openapi.json`
 - **Licencia:** CC BY 4.0, citar con enlace a [todoresuelto.com](https://todoresuelto.com)
@@ -100,7 +100,7 @@ Las ediciones mensuales de Argentina (abril a noviembre de 2026) están en Zenod
 
 ## Cómo citar
 
-> [Índice de Precios del Hogar — Todo Resuelto](https://todoresuelto.com/informe-precios-hogar) (CC BY 4.0)
+> [Índice de Precios del Hogar — Todo Resuelto](https://todoresuelto.com/precios) (CC BY 4.0)
 
 ---
 
@@ -113,7 +113,7 @@ Todo Resuelto publishes the Home Price Index (Índice de Precios del Hogar): wha
 The API returns, for each country and trade, **up to 3 sample jobs with their price range, unit and source** (who publishes that price and the URL of the page), how many jobs the full table prices, and the link to that full table with every row and source. The MCP server gives AI assistants the same data through two read-only tools, `listar_paises` and `precios_por_pais`. No API key, open CORS, licence CC BY 4.0: cite with a link to [todoresuelto.com](https://todoresuelto.com).
 
 - **MCP server:** `https://todoresuelto.com/mcp` (Streamable HTTP). Config: [`examples/mcp.json`](examples/mcp.json)
-- **Site:** [Todo Resuelto](https://todoresuelto.com) · **Prices:** [Home Price Index](https://todoresuelto.com/informe-precios-hogar)
+- **Site:** [Todo Resuelto](https://todoresuelto.com) · **Prices:** [Home repair prices](https://todoresuelto.com/precios)
 - **OpenAPI 3.1:** `https://todoresuelto.com/api/v1/openapi.json`
 - **Dataset (Argentina, Apr–Nov 2026):** https://doi.org/10.5281/zenodo.24533603
 
