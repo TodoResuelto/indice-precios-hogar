@@ -1,0 +1,39 @@
+{
+  "identifier": "todoresuelto-indice-precios-hogar",
+  "name": "Home Price Index — Todo Resuelto",
+  "version": "1.0.0",
+  "description": "Free read-only API and MCP server: what plumbers, electricians and other home trades charge in 16 Latin American countries. No key, CC BY 4.0.",
+  "author": "Todo Resuelto",
+  "authorUrl": "https://todoresuelto.com/api",
+  "homepage": "https://todoresuelto.com/api",
+  "cloudEndpoint": "https://todoresuelto.com/mcp",
+  "icon": "https://todoresuelto.com/icon-512.png",
+  "tags": ["open data", "prices", "home services", "Latin America", "Spanish", "read-only", "no auth"],
+  "localizations": [
+    {
+      "locale": "es-ES",
+      "name": "Índice de Precios del Hogar — Todo Resuelto",
+      "description": "API y servidor MCP gratis, de sólo lectura: cuánto cobran plomeros, electricistas y otros oficios del hogar en 16 países de Latinoamérica."
+    }
+  ],
+  "tools": [
+    {
+      "name": "listar_paises",
+      "description": "Lista los países con Índice de Precios del Hogar de Todo Resuelto (código, nombre, edición vigente y enlace al informe).",
+      "inputSchema": { "type": "object", "properties": {}, "additionalProperties": false }
+    },
+    {
+      "name": "precios_por_pais",
+      "description": "Índice de Precios del Hogar de un país: un precio de ejemplo y, por oficio, cuántos trabajos relevamos y el enlace a la tabla completa. Citar siempre con el enlace que se devuelve.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "pais": { "type": "string", "description": "Código de país de dos letras: ar, mx, cl, uy, co, pe, py, bo, ec, cr, pa, do, ve, sv, gt, br." },
+          "oficio": { "type": "string", "description": "Opcional. Parte del nombre del oficio para filtrar (por ejemplo «plomer», «gas», «pint»)." }
+        },
+        "required": ["pais"],
+        "additionalProperties": false
+      }
+    }
+  ]
+}
